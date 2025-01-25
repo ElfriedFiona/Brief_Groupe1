@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.containerun {
+    width: 40%;
+    justify-content:center;
+}
+ .containerdeux {
+  width: 40%; ;
+}  
