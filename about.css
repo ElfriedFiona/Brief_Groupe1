@@ -1,13 +1,118 @@
-.container{
-    display: flex;
-    max-width: 1000px;
-    margin: 50px auto;
+/* Conteneur principal */
+.container {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    flex-direction: column; /* Aligne les éléments enfants en colonne */
+    max-width: 1000px; /* Limite la largeur maximale du conteneur */
+    margin: 50px auto; /* Centre le conteneur horizontalement avec une marge verticale */
 }
 
-.containerun {
-    width: 40%;
-    justify-content:center;
+/* Style pour le premier conteneur */
+.containerun, .containerdeux {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    flex-direction: row; /* Aligne les éléments enfants en ligne */
+    justify-content: space-between; /* Espace les éléments enfants de manière égale */
+    margin: 20px 0; /* Ajoute une marge verticale entre les sections */
 }
- .containerdeux {
-  width: 40%; ;
-}  
+
+/* Style pour les sections à gauche et à droite */
+.leftun, .rightun, .leftdeux, .rightdeux {
+    width: 45%; /* Définit la largeur des sections à 45% */
+}
+
+/* Justifie le texte à droite */
+.containerun .rightun, .containerdeux .rightdeux {
+    text-align: justify; /* Justifie le texte pour une présentation uniforme */
+}
+
+/* Réduit la taille de l'image et ajoute une marge à droite */
+.leftdeux img {
+    width: 80%; /* Définit la largeur de l'image à 80% */
+    margin-right: 20px; /* Ajoute une marge à droite de l'image */
+}
+
+/* Style pour les boutons */
+button {
+    padding: 10px 20px; /* Ajoute du padding intérieur au bouton */
+    background-color: #FB5607; /* Définit la couleur de fond du bouton */
+    color: white; /* Définit la couleur du texte du bouton */
+    border: none; /* Supprime les bordures */
+    cursor: pointer; /* Change le curseur en pointeur survol */
+    border-radius: 10%;/* Ajoute des coins arrondis de 10% */
+
+}
+/* Style pour le bouton au survol */
+button:hover {
+    background-color: #0056b3; /* Change la couleur de fond au survol */
+}
+/* Ajout du background avec opacité pour .containerun */
+.containerun {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    flex-direction: row; /* Aligne les éléments enfants en ligne */
+    justify-content: space-between; /* Espace les éléments enfants de manière égale */
+    margin: 20px 0; /* Ajoute une marge verticale entre les sections */
+    background-color: rgba(217, 217, 217, 0.19); /* Définit la couleur de fond avec une opacité de 19% */
+}
+/* ajout de la couleur des titres h5*/
+h5{
+    color: #3A86FF;
+}
+/* ajout de la couleur des titres h1*/
+h1{
+    color: black;
+}
+/* Ajout d'une flèche au bouton "Read More" */
+button::after {
+    content: '→'; /* Caractère de la flèche */
+    font-size: 1.2em; /* Augmente la taille de la flèche */
+    margin-left: 10px; /* Ajoute un espace entre le texte et la flèche */
+}
+/* Centrer le texte de la section .containertrois */
+.containertrois h1, h5{
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    flex-direction: column; /* Aligne les éléments enfants en colonne */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre le texte des éléments enfants */
+    padding: 2px; /* Ajoute du padding autour des éléments */
+}
+.containertrois{
+    background-color: rgba(217, 217, 217, 0.19); /* Définit la couleur de fond avec une opacité de 19% */
+
+}
+/* Style pour les éléments h5 et h1 */
+h5, h1 {
+    margin: 10px; /* Supprime les marges pour une présentation uniforme */
+    text-align: left; /* Aligne le texte sur la gauche */
+    padding: 5px;
+}
+
+/* Style pour les boîtes */
+.box, .box2, .box3 {
+    background-color: white; /* Couleur de fond blanche */
+    border: 1px solid #ddd; /* Bordure gris clair */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Espacement intérieur */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Léger ombrage */
+    width: 30%; /* Définit la largeur des boîtes */
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    align-items: center; /* Centre les éléments verticalement */
+    gap: 10px; /* Espace entre les éléments */
+}
+
+/* Style pour les images */
+.box img, .box2 img, .box3 img {
+    max-width: 50px; /* Limite la largeur maximale des images */
+    height: 50px; /* Maintient les proportions des images */
+}
+
+
+/* Style pour les titres (h2) */
+.box h2, .box2 h2, .box3 h2 {
+    margin-top: 0; /* Supprime la marge supérieure */
+    margin-bottom: 10px; /* Ajoute un petit espace sous le titre */
+    align-self: center; /* Centre le titre horizontalement */
+}
+/* Style pour les paragraphes (p) */
+.box p, .box2 p, .box3 p {
+    margin: 0; /* Supprime les marges */
+}
