@@ -1,0 +1,620 @@
+*{
+    margin: 0 40px;
+    padding-top: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+    
+}
+:root{
+    --bg-color:#FFF;
+    --second-bg-color: #999595;
+    --third-bg-color:  #0b2238;
+    --fourth-bg-color: #F1EEEE;
+    --text-color: black;
+    --second-text-color: #3a86ff;
+    --third-text-color: #7bd88a;
+    --main-color: #FB5607;
+}
+html{
+	font-size: 60%;
+	overflow-x: hidden;
+}
+body{
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+.header{
+	position: fixed;
+    top: 0;
+    left: 0;
+	display: flex;
+	justify-content: space-between;
+    backdrop-filter: blur(40px);
+	align-items: center;
+	z-index: 100;
+	width: 100%;
+	height: 5vw;
+    margin-top: 10px;
+}
+
+.logo img{
+    width: 60px;
+	cursor: pointer;
+}
+.logo2{
+    margin-left: -11rem;
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    color: var(--text-color);
+    margin-right: 0;
+}
+.navbar a{
+    font-size: 1.5rem;
+    color: var(--second-bg-color);
+    margin-left: 2rem;
+    border-bottom: 10px solid transparent;
+}
+.navbar .active{
+        color: var(--main-color);
+}
+.btn{
+	display: inline-block;
+	padding: 1rem ;
+	background: var(--main-color);
+	border-radius: 3rem;
+	font-size: 1.2rem;
+	color: var(--bg-color);
+	border-radius: 2px solid transparent;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+}
+.btn-group1 a:nth-of-type(1){
+	background-color: var(--bg-color);
+    border: 1px solid var(--second-bg-color);
+	color: var(--second-bg-color);
+	box-shadow: 0 0 25px transparent;
+    margin-right: 20rem;
+    margin-left: -9rem;
+}
+.btn-group1 a:nth-of-type(2){
+	box-shadow: 0 0 25px transparent;
+    margin-right: 12rem;
+    margin-left: -9rem;
+    font-size: 2rem;
+}
+.btn-group a:nth-of-type(2){
+	background-color: var(--bg-color);
+    border: 1px solid var(--third-bg-color);
+	color: var(--text-color);
+	box-shadow: 0 0 25px transparent;
+}
+.btn-group a:nth-of-type(2){
+	background-color: var(--bg-color);
+    border: 1px solid var(--third-bg-color);
+	color: var(--text-color);
+	box-shadow: 0 0 25px transparent;
+    margin-left: -2rem;
+}
+.btn-group a:nth-of-type(1){
+	background-color: var(--main-color);
+	color: var(--bg-color);
+    text-align: center;
+	box-shadow: 0 0 25px transparent;
+    margin-left: -0rem;
+    margin-top: 3rem;
+}
+
+.btn-group1 .moon{
+    margin-left: -16rem;
+    font-size: 25px;
+}
+
+.home{
+    margin-top: 20rem;
+	display: flex;
+}
+.home .lefthome{
+    margin-left: -8rem;
+}
+
+.home h1{
+	font-size: 4rem;
+	font-weight: bold;
+    line-height: 1.5;
+    color: var(--text-color);
+	max-width: 1000px;
+}
+.home h1 span{
+	color: var(--second-text-color);
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-left: -0rem;
+}
+
+.home p{
+	line-height: 5rem;
+	max-width: 1000px;
+	color: var(--second-bg-color);
+    letter-spacing: 0.3rem;
+}
+.home .img-box img{
+    margin-top: 0.1rem;
+    width: 310%;
+    margin-right: -81.5rem ;
+    height: 110%;
+}
+
+
+.service{
+    background-color: var(--fourth-bg-color);
+    margin-top: 15rem;
+    padding-bottom: 8rem;
+    margin-bottom: 10rem;
+}
+.service h1{
+    padding-top: 8rem;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+}
+.service h1 span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--second-text-color);
+    line-height: 3rem;
+}
+.service .servicebloc{
+    display: flex;
+    margin-top: 5rem;
+    line-height: 3rem;
+    text-align: center;
+}
+.service .servicebloc .design{
+    background-color: var(--bg-color);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.service .servicebloc .strategy{
+    background-color: var(--bg-color);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.service .servicebloc .marketing{
+    background-color: var(--bg-color);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+
+.explore{
+    margin-top: 7rem;
+    padding-bottom: 8rem;
+}
+.explore .explorebloc{
+    display: flex;
+    margin-top: 5rem;
+    line-height: 2rem;
+}
+.explore .explorebloc .image{
+    margin-right: -8rem;
+}
+.explore .explorebloc .image img{
+    align-items: left;
+    width: 70%;
+}
+.explore .explorebloc .expright{
+    margin-right: -10rem;
+}
+.explore .explorebloc .expright h1{
+    font-size: 2rem;
+    padding-top: 6rem;
+    line-height: 3rem;
+    margin-left: -2rem;
+}
+.explore .explorebloc .expright span{
+    font-size: 1.3rem;
+    margin-left: -0.1rem;
+    color: var(--second-text-color);
+}
+.explore .explorebloc .expright .P1{
+    font-size: 1.15rem;
+    margin-left: -2rem;
+    color: var(--second-bg-color);
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+.explore .explorebloc .expright .bloc4{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 3rem;
+}
+.explore .explorebloc .expright .bloc4 h3{
+    font-size: 1.3rem;
+}
+.explore .explorebloc .expright .bloc4 p{
+    font-size: 1.15rem;
+    color: var(--second-bg-color);
+    padding-top: 1rem;
+}
+.explore .explorebloc .expright .bloc4 > div {
+    text-align: left; 
+    height: 70px; 
+    margin-left: -10.5rem;
+    font-size: 1rem;
+}
+
+.properties{
+    background-color: var(--fourth-bg-color);
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+
+.properties h1 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 3rem;
+    margin: 5rem;
+}
+.properties h1 span{
+    color: var(--second-text-color);
+}
+
+.pro-box {
+    display: flex;
+    line-height: 2rem;
+    margin-right: 9rem;
+}
+
+.pro-card {
+    background-color: white;
+    border: 1px solid var(--bg-color);
+    display: inline-block; 
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.4s ease;
+    color: black;
+    margin-right: -1rem; 
+    width: 90%; 
+}
+
+.pro-card h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 2rem 1rem;
+}
+.pro-card h3 span{
+    font-size: 2rem;
+    text-align: left;
+    margin-left: -0.2rem ;
+    color: var(--second-text-color);
+   line-height: 4rem;
+}
+
+.pro-card p {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: -1.4rem;
+    color: var(--second-bg-color);
+}
+
+.pro-card img {
+    width: 100%;
+   height: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+.pro-card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+    font-size: 1rem;
+    color: var(--second-bg-color);
+    margin-top: 10px; 
+    margin-left: -7rem;
+}
+
+.pro-card a i {
+    margin-right: 3px;
+}
+
+.pro-card .link-container {
+    display: flex; 
+    margin-top: 5px; 
+}
+.properties .btn-group2{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0rem;
+}
+.btn-group2 a:nth-of-type(2){
+	background-color: var(--second-bg-color);
+    border: 1px solid var(--second-bg-color);
+    margin-left: -2rem;
+    width: 1px;
+}
+.btn-group2 a:nth-of-type(3){
+	background-color: var(--second-bg-color);
+    border: 1px solid var(--second-bg-color);
+    margin-left: -2rem;
+}
+.btn-group2 a:nth-of-type(4){
+	background-color: var(--second-bg-color);
+    border: 1px solid var(--second-bg-color);
+    margin-left: -2rem;
+}
+.percentage-card >*{
+    display: inline-block;
+    width: 20%; 
+    vertical-align: top;
+    margin-right: 1%; 
+    margin-bottom: 2rem;
+    margin-top: 8rem;
+    font-size: 1.6rem;
+}
+.percentage-card > *:nth-child(4n) {
+    margin-right: 0;
+}
+.percentage-card > *:nth-child(1n) {
+    margin-left: 3.5%;
+}
+
+
+.blog{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.blog .exploreBlog{
+    display: flex;
+    line-height: 2rem;
+    
+}
+.blog .exploreBlog p{
+    color: var(--second-bg-color);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.blog .exploreBlog img{
+    width: 130%;
+    border-radius: 10px;
+}
+.blog .exploreBlog .blog1{
+    margin-left: -10rem;
+    margin-right: -0.2rem;
+}
+.blog .exploreBlog .blog1 .P1{
+    margin-left: 7.8rem;
+}
+.blog .exploreBlog .blog1 h1{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-left: -0.1rem;
+}
+.blog .exploreBlog .blog1 h1 span{
+    color: var(--second-text-color);
+    font-size: 1.5rem;
+    margin-left: -4rem;
+}
+.blog .exploreBlog .blog1 .first{
+    margin-top: 4rem;
+}
+.blog .exploreBlog h3{
+    margin-top: 2rem;
+    color: var(--third-text-color);
+}
+.blog .exploreBlog .blog2{
+    margin-right: -0.2rem;
+    margin-top: 10rem;
+}
+
+
+
+/* SECTION PRINCIPALE */
+.choose {
+    background-color: var(--fourth-bg-color); /* Fond de la section */
+    padding: 80px 0; /* Espacement interne */
+    text-align: center; /* Centrer le titre */
+}
+
+.choose h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px; /* Espace sous le titre */
+    line-height: 1.5;
+}
+
+.choose h1 span {
+    color: var(--second-text-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* CONTENEUR DES CARTES */
+.choose-container {
+    display: flex; /* Alignement horizontal des cartes */
+    justify-content: center; /* Centrer les cartes dans le conteneur */
+    flex-wrap: wrap; /* Permet aux cartes de revenir à la ligne sur petits écrans */
+    max-width: 1000px; /* Limite la largeur totale du conteneur */
+    margin: 0 auto; /* Centrer le conteneur dans la page */
+    
+}
+
+/* STYLE DES CARTES */
+.choose1, .choose2, .choose3 {
+    background-color: white; /* Fond blanc */
+    border: 1px solid #ddd; /* Bordure grise légère */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    display: flex; /* Positionne l'icône et le texte horizontalement */
+    align-items: center; /* Aligne l'icône et le texte verticalement */
+    flex: 1; /* Les cartes prennent la même largeur */
+    max-width: 250px; /* Largeur maximale de chaque carte */
+}
+
+/* STYLE DES ICONES */
+.btn3, .btn4, .btn5 {
+    display: flex;
+    justify-content: center;
+    margin-left: -4rem;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 50%; /* Forme circulaire */
+    font-size: 2rem;
+    flex-shrink: 0; /* Empêche l'icône de rétrécir */
+}
+.btn4{
+    background-color: rgb(238, 219, 222);
+}
+.btn5{
+    background-color: rgb(235, 243, 237);
+}
+
+/* STYLE DU TEXTE DANS LES CARTES */
+
+.buy h2, .see h2, .rent h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: -11rem;
+}
+
+.buy p, .see p, .rent p {
+    font-size: 1rem;
+    color: var(--second-bg-color);
+    margin-left: -10rem;
+}
+
+
+.faqs{
+    margin-top: 12rem;
+    margin-bottom: 10rem;
+    text-align: center;
+    margin-left: 70rem;
+    font-size: 1.5rem;
+}
+.faqs span{
+    color: var(--second-text-color);
+    margin-left: -16.5rem;
+}
+.faqs h1{
+    margin-left: -29rem;
+}
+.faqs p{
+    margin-left: -7.3rem;
+    color: var(--second-bg-color);
+}
+.faqs h2{
+    margin-left: -10rem;
+    margin-top: 4rem;
+    border: 1px solid var(--second-bg-color);
+    padding: 1rem 1rem;
+}
+
+
+
+.profil{
+    padding-top: 10rem;
+    background-color: var(--fourth-bg-color);
+    align-items: center;
+    text-align: center;
+    line-height: 2rem;
+    padding-bottom: 10rem;
+}
+.profil img{
+    border: 1px sold transparent;
+    border-radius: 50%;
+    width: 10%;
+}
+.profil p{
+    color: var(--second-bg-color);
+}
+
+
+.footer{
+    background-color: var(--third-bg-color);
+    padding-top: 10rem;
+    color: var(--bg-color);
+}
+.footer .footer1{
+    display: flex;
+    line-height: 3rem;
+    padding-bottom: 5rem;
+    justify-content: space-between;
+}
+.footer .footcontainer{
+    display: flex;
+    line-height: 2rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+ 
+}
+.footer span{
+    color: var(--main-color);
+}
+.footer .designed{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+.footer .footcontainer .btn-group2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: 2rem;
+}
+.footer .footcontainer .btn {
+    width: 20px; /* Taille du bouton */
+    height: 20px; /* Taille du bouton */
+    background-color: #f9f9f9; /* Couleur de fond claire */
+    border: 1px solid ; /* Bordure de la couleur principale */
+    border-radius: 50%; /* Forme circulaire */
+    display: flex; /* Pour centrer l'icône */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+/* STYLE DU BOUTON */
+.btn1 {
+    display: flex; /* Positionne le texte et l'icône en ligne */
+    align-items: center; /* Aligne verticalement le texte et l'icône */
+    justify-content: space-between; /* Crée un espace entre le texte et l'icône */
+    width: 150px; /* Largeur du bouton */
+    height: 30px; /* Hauteur du bouton */
+    background-color: white; /* Fond blanc */
+    border: 1px solid #ccc; /* Bordure grise légère */
+    border-radius: 8px; /* Coins légèrement arrondis */
+     /* Supprime le soulignement */
+    color: var(--second-bg-color); /* Couleur du texte */
+    font-size: 1rem; /* Taille du texte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet d'ombre */ 
+}
+
+/* TEXTE À GAUCHE */
+.btn1 span { 
+    font-size: 0.5rem;
+    line-height: 0.4rem;
+}
+
+/* STYLE DE L'ICÔNE */
+.btn1 i {
+    background-color: var(--main-color); /* Fond orange */
+    border-radius: 50%; /* Forme circulaire */
+    width: 50px; /* Largeur du cercle */
+    height: 20px; /* Hauteur du cercle */
+    display: flex; /* Pour centrer l'icône */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    font-size: 1.2rem; /* Taille de l'icône */
+}
+
+
