@@ -97,6 +97,7 @@ h5, h1 {
     display: flex; /* Utilise Flexbox pour aligner les éléments */
     align-items: center; /* Centre les éléments verticalement */
     gap: 10px; /* Espace entre les éléments */
+   
 }
 
 /* Style pour les images */
@@ -115,4 +116,61 @@ h5, h1 {
 /* Style pour les paragraphes (p) */
 .box p, .box2 p, .box3 p {
     margin: 0; /* Supprime les marges */
+}
+.containerquatre{
+    background-color: white; /* Définit la couleur de fond avec une opacité de 19% */
+
+}
+/* Conteneur principal pour aligner les éléments horizontalement */
+.containerquatre {
+    display: flex; /* Utilise Flexbox pour aligner les éléments en ligne */
+    flex-direction: row; /* Aligne les éléments enfants en ligne */
+    gap: 20px; /* Espace entre les éléments */
+    max-width: 100%; /* Utilise toute la largeur disponible */
+    margin: 50px auto; /* Centre le conteneur horizontalement avec une marge verticale */
+    justify-content: space-around; /* Espacement égal autour des éléments */
+    align-items: center; /* Centre les éléments verticalement */
+    text-align: center; /* Centre le texte des éléments enfants */
+}
+
+/* Style pour les éléments h5 et h1 */
+.containerquatre h5, .containerquatre h1 {
+    width: 100%; /* Utilise toute la largeur disponible */
+    margin-bottom: 20px; /* Ajoute un espace sous les titres */
+}
+
+/* Style pour les items */
+.containerquatre .item, .containerquatre .item2, .containerquatre .item3, .containerquatre .item4 {
+    background-color: white; /* Couleur de fond blanche */
+    border: 1px solid #ddd; /* Bordure gris clair */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Espacement intérieur */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Léger ombrage */
+    width: 20%; /* Définit la largeur des items */
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    flex-direction: column; /* Aligne les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre le texte des éléments enfants */
+}
+
+/* Style pour les images */
+.containerquatre .item img, .containerquatre .item2 img, .containerquatre .item3 img, .containerquatre .item4 img {
+    max-width: 100px; /* Limite la largeur maximale des images */
+    height: auto; /* Maintient les proportions des images */
+    margin-bottom: 10px; /* Espace sous les images */
+}
+
+/* Style pour les titres (h2) */
+.containerquatre .item h2, .containerquatre .item2 h2, .containerquatre .item3 h2, .containerquatre .item4 h2 {
+    margin-top: 0; /* Supprime la marge supérieure */
+    margin-bottom: 10px; /* Ajoute un petit espace sous le titre */
+}
+
+/* Style pour les sous-titres (h6) */
+.containerquatre .item h6, .containerquatre .item2 h6, .containerquatre .item3 h6, .containerquatre .item4 h6 {
+    margin: 0; /* Supprime les marges */
+  
+}
+h6{
+    color: #999595;
 }
