@@ -79,6 +79,10 @@ button::after {
     background-color: rgba(217, 217, 217, 0.19); /* Définit la couleur de fond avec une opacité de 19% */
 
 }
+.containertrois .container-box{
+    display: flex;
+    justify-content: space-between;
+}
 /* Style pour les éléments h5 et h1 */
 h5, h1 {
     margin: 10px; /* Supprime les marges pour une présentation uniforme */
