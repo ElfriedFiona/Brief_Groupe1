@@ -99,8 +99,10 @@ h5, h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Léger ombrage */
     width: 30%; /* Définit la largeur des boîtes */
     display: flex; /* Utilise Flexbox pour aligner les éléments */
-    align-items: center; /* Centre les éléments verticalement */
     gap: 10px; /* Espace entre les éléments */
+    flex-direction: column; /* Aligne les éléments enfants en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre le texte des éléments enfants */
    
 }
 
@@ -121,20 +123,15 @@ h5, h1 {
 .box p, .box2 p, .box3 p {
     margin: 0; /* Supprime les marges */
 }
-.containerquatre{
-    background-color: white; /* Définit la couleur de fond avec une opacité de 19% */
 
-}
-/* Conteneur principal pour aligner les éléments horizontalement */
+/* Conteneur principal */
 .containerquatre {
-    display: flex; /* Utilise Flexbox pour aligner les éléments en ligne */
-    flex-direction: row; /* Aligne les éléments enfants en ligne */
-    gap: 20px; /* Espace entre les éléments */
-    max-width: 100%; /* Utilise toute la largeur disponible */
-    margin: 50px auto; /* Centre le conteneur horizontalement avec une marge verticale */
-    justify-content: space-around; /* Espacement égal autour des éléments */
-    align-items: center; /* Centre les éléments verticalement */
+    display: flex; /* Utilise Flexbox pour aligner les éléments en colonne */
+    flex-direction: column; /* Aligne les éléments enfants en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
     text-align: center; /* Centre le texte des éléments enfants */
+    padding: 20px; /* Ajoute un peu d'espace intérieur */
+    background-color: white; /* Couleur de fond avec 6% d'opacité */
 }
 
 /* Style pour les éléments h5 et h1 */
@@ -143,15 +140,24 @@ h5, h1 {
     margin-bottom: 20px; /* Ajoute un espace sous les titres */
 }
 
+/* Conteneur pour les items */
+.container-items {
+    display: flex; /* Utilise Flexbox pour aligner les items en ligne */
+    flex-direction: row; /* Aligne les items horizontalement */
+    gap: 20px; /* Espace entre les items */
+    justify-content: center; /* Centre les items horizontalement */
+    width: 100%; /* Utilise toute la largeur disponible */
+}
+
 /* Style pour les items */
 .containerquatre .item, .containerquatre .item2, .containerquatre .item3, .containerquatre .item4 {
-    background-color: white; /* Couleur de fond blanche */
+    background-color:rgba(151, 71, 255, 0.06); /* Couleur de fond blanche */
     border: 1px solid #ddd; /* Bordure gris clair */
     border-radius: 10px; /* Coins arrondis */
     padding: 20px; /* Espacement intérieur */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Léger ombrage */
     width: 20%; /* Définit la largeur des items */
-    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    display: flex; /* Utilise Flexbox pour aligner les éléments en colonne */
     flex-direction: column; /* Aligne les éléments en colonne */
     align-items: center; /* Centre les éléments horizontalement */
     text-align: center; /* Centre le texte des éléments enfants */
@@ -159,8 +165,8 @@ h5, h1 {
 
 /* Style pour les images */
 .containerquatre .item img, .containerquatre .item2 img, .containerquatre .item3 img, .containerquatre .item4 img {
-    max-width: 100px; /* Limite la largeur maximale des images */
-    height: auto; /* Maintient les proportions des images */
+    max-width: 200px; /* Limite la largeur maximale des images */
+    height: 200px; /* Maintient les proportions des images */
     margin-bottom: 10px; /* Espace sous les images */
 }
 
@@ -173,8 +179,8 @@ h5, h1 {
 /* Style pour les sous-titres (h6) */
 .containerquatre .item h6, .containerquatre .item2 h6, .containerquatre .item3 h6, .containerquatre .item4 h6 {
     margin: 0; /* Supprime les marges */
-  
-}
-h6{
     color: #999595;
 }
+
+    
+
