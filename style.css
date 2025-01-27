@@ -496,8 +496,15 @@ body{
     flex: 1; /* Les cartes prennent la même largeur */
     max-width: 250px; /* Largeur maximale de chaque carte */
 }
- .choose2, .choose3 {
-    margin-left: -1.5rem;
+.choose1, .choose2, .choose3 {
+    background-color: white; /* Fond blanc */
+    border: 1px solid #ddd; /* Bordure grise légère */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    display: flex; /* Positionne l'icône et le texte horizontalement */
+    align-items: center; /* Aligne l'icône et le texte verticalement */
+    flex: 1; /* Les cartes prennent la même largeur */
+    max-width: 250px; /* Largeur maximale de chaque carte */
 }
 
 /* STYLE DES ICONES */
@@ -628,7 +635,6 @@ body{
 /* STYLE DU BOUTON */
 .btn1 {
     display: flex; /* Positionne le texte et l'icône en ligne */
-    align-items: center; /* Aligne verticalement le texte et l'icône */
     justify-content: space-between; /* Crée un espace entre le texte et l'icône */
     width: 150px; /* Largeur du bouton */
     height: 30px; /* Hauteur du bouton */
@@ -638,26 +644,38 @@ body{
     color: var(--second-bg-color); /* Couleur du texte */
     font-size: 1rem; /* Taille du texte */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet d'ombre */ 
+    
 }
 
 /* TEXTE À GAUCHE */
 .btn1 span { 
     font-size: 0.5rem;
-    line-height: 0.4rem;
+    line-height: 0.8rem;
+    color: var(--second-bg-color);
+    font-size: 1rem;
+    padding-top: 0.4rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 /* STYLE DE L'ICÔNE */
 .btn1 i {
     background-color: var(--main-color); /* Fond orange */
     border-radius: 50%; /* Forme circulaire */
-    width: 70px; /* Largeur du cercle */
+    width: 50px; /* Largeur du cercle */
     height: 20px; /* Hauteur du cercle */
     display: flex; /* Pour centrer l'icône */
     justify-content: center; /* Centre horizontalement */
     align-items: center; /* Centre verticalement */
     font-size: 1.2rem; /* Taille de l'icône */
+    margin-top: 0.5rem;
+    margin-left: -0.1rem;
+    padding-right: -5rem;
 }
 
+.footer .designed i{
+    margin-right: -3.5rem;
+}
 
 
 
