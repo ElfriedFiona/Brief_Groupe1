@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+);
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+.contact-us
+ {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(236, 227, 227);
+  background-size: cover;
+ }
+ .contact-us .content
+ {
+  max-width: 800px ;
+  text-align: center;
+ }
+ .contact-us .content h4
+ {
+  color: #2196F3; /* Couleur bleue claire */
+ }
+
+ .box
+ {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+ }
