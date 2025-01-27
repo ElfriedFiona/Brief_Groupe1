@@ -70,6 +70,40 @@ body{
 	letter-spacing: 0.1rem;
 	cursor: pointer;
 }
+.btn7 {
+    display: inline-block;
+    padding: 0.5rem 1rem; /* Réduit la hauteur et la largeur du bouton */
+    background: var(--second-text-color);
+    border-radius: 1.5rem; /* Garde des bords arrondis mais plus proportionnés */
+    font-size: 0.9rem; /* Réduit la taille du texte */
+    color: var(--bg-color);
+    border: 1px solid transparent; /* Corrige l'erreur 'border-radius: 1px solid transparent' */
+    letter-spacing: 0.05rem; /* Réduit l'espacement des lettres */
+    cursor: pointer;
+}
+
+.btn8{
+	display: inline-block;
+	padding: 1rem ;
+	background: rgb(235, 211, 215);
+	border-radius: 3rem;
+	font-size: 1.2rem;
+	color: var(--bg-color);
+	border-radius: 2px solid transparent;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+}
+.btn9{
+	display: inline-block;
+	padding: 1rem ;
+	background: rgb(245, 245, 94);
+	border-radius: 3rem;
+	font-size: 1.2rem;
+	color: var(--bg-color);
+	border-radius: 2px solid transparent;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+}
 .btn-group1 a:nth-of-type(1){
 	background-color: var(--bg-color);
     border: 1px solid var(--second-bg-color);
@@ -152,6 +186,7 @@ body{
     margin-top: 15rem;
     padding-bottom: 8rem;
     margin-bottom: 10rem;
+    padding-left: 7rem;
 }
 .service h1{
     padding-top: 8rem;
@@ -180,11 +215,13 @@ body{
     background-color: var(--bg-color);
     padding-top: 3rem;
     padding-bottom: 3rem;
+    margin-left: -1rem;
 }
 .service .servicebloc .marketing{
     background-color: var(--bg-color);
     padding-top: 3rem;
     padding-bottom: 3rem;
+    margin-left: -1rem;
 }
 
 
@@ -459,6 +496,9 @@ body{
     flex: 1; /* Les cartes prennent la même largeur */
     max-width: 250px; /* Largeur maximale de chaque carte */
 }
+ .choose2, .choose3 {
+    margin-left: -1.5rem;
+}
 
 /* STYLE DES ICONES */
 .btn3, .btn4, .btn5 {
@@ -550,16 +590,18 @@ body{
     line-height: 3rem;
     padding-bottom: 5rem;
     justify-content: space-between;
+    margin-left: -1.5rem;
 }
 .footer .footcontainer{
     display: flex;
     line-height: 2rem;
     padding-bottom: 5rem;
     padding-top: 5rem;
- 
+    margin-left: -0.8rem;
 }
 .footer span{
     color: var(--main-color);
+    margin-left: 0rem;
 }
 .footer .designed{
     padding-top: 4rem;
@@ -593,7 +635,6 @@ body{
     background-color: white; /* Fond blanc */
     border: 1px solid #ccc; /* Bordure grise légère */
     border-radius: 8px; /* Coins légèrement arrondis */
-     /* Supprime le soulignement */
     color: var(--second-bg-color); /* Couleur du texte */
     font-size: 1rem; /* Taille du texte */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet d'ombre */ 
@@ -609,12 +650,14 @@ body{
 .btn1 i {
     background-color: var(--main-color); /* Fond orange */
     border-radius: 50%; /* Forme circulaire */
-    width: 50px; /* Largeur du cercle */
+    width: 70px; /* Largeur du cercle */
     height: 20px; /* Hauteur du cercle */
     display: flex; /* Pour centrer l'icône */
     justify-content: center; /* Centre horizontalement */
     align-items: center; /* Centre verticalement */
     font-size: 1.2rem; /* Taille de l'icône */
 }
+
+
 
 
