@@ -1,0 +1,345 @@
+*{
+    margin: 0 40px;
+    padding-top: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+    
+}
+:root{
+    --bg-color:#FFF;
+    --second-bg-color: #999595;
+    --third-bg-color:  #0b2238;
+    --fourth-bg-color: #F1EEEE;
+    --text-color: black;
+    --second-text-color: #3a86ff;
+    --third-text-color: #7bd88a;
+    --main-color: #FB5607;
+}
+html{
+	font-size: 60%;
+	overflow-x: hidden;
+}
+.header{
+	position: fixed;
+    top: 0;
+    left: 0;
+	display: flex;
+	justify-content: space-between;
+    backdrop-filter: blur(40px);
+	align-items: center;
+	z-index: 100;
+	width: 100%;
+	height: 5vw;
+    margin-top: 10px;
+}
+
+.logo img{
+    width: 60px;
+	cursor: pointer;
+}
+.logo2{
+    margin-left: -11rem;
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    color: var(--text-color);
+    margin-right: 0;
+}
+.navbar a{
+    font-size: 1.5rem;
+    color: var(--second-bg-color);
+    margin-left: 2rem;
+    border-bottom: 10px solid transparent;
+}
+.navbar .active{
+        color: var(--main-color);
+}
+.btn{
+	display: inline-block;
+	padding: 1rem ;
+	background: var(--main-color);
+	border-radius: 3rem;
+	font-size: 1.2rem;
+	color: var(--bg-color);
+	border-radius: 2px solid transparent;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+}
+.btn7 {
+    display: inline-block;
+    padding: 0.5rem 1rem; /* Réduit la hauteur et la largeur du bouton */
+    background: var(--second-text-color);
+    border-radius: 1.5rem; /* Garde des bords arrondis mais plus proportionnés */
+    font-size: 0.9rem; /* Réduit la taille du texte */
+    color: var(--bg-color);
+    border: 1px solid transparent; /* Corrige l'erreur 'border-radius: 1px solid transparent' */
+    letter-spacing: 0.05rem; /* Réduit l'espacement des lettres */
+    cursor: pointer;
+}
+
+.btn8{
+	display: inline-block;
+	padding: 1rem ;
+	background: rgb(235, 211, 215);
+	border-radius: 3rem;
+	font-size: 1.2rem;
+	color: var(--bg-color);
+	border-radius: 2px solid transparent;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+}
+.btn9{
+	display: inline-block;
+	padding: 1rem ;
+	background: rgb(245, 245, 94);
+	border-radius: 3rem;
+	font-size: 1.2rem;
+	color: var(--bg-color);
+	border-radius: 2px solid transparent;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+}
+.btn-group1 a:nth-of-type(1){
+	background-color: var(--bg-color);
+    border: 1px solid var(--second-bg-color);
+	color: var(--second-bg-color);
+	box-shadow: 0 0 25px transparent;
+    margin-right: 20rem;
+    margin-left: -9rem;
+}
+.btn-group1 a:nth-of-type(2){
+	box-shadow: 0 0 25px transparent;
+    margin-right: 12rem;
+    margin-left: -9rem;
+    font-size: 2rem;
+}
+.btn-group a:nth-of-type(2){
+	background-color: var(--bg-color);
+    border: 1px solid var(--third-bg-color);
+	color: var(--text-color);
+	box-shadow: 0 0 25px transparent;
+}
+.btn-group a:nth-of-type(2){
+	background-color: var(--bg-color);
+    border: 1px solid var(--third-bg-color);
+	color: var(--text-color);
+	box-shadow: 0 0 25px transparent;
+    margin-left: -2rem;
+}
+.btn-group a:nth-of-type(1){
+	background-color: var(--main-color);
+	color: var(--bg-color);
+    text-align: center;
+	box-shadow: 0 0 25px transparent;
+    margin-left: -0rem;
+    margin-top: 3rem;
+}
+
+.btn-group1 .moon{
+    margin-left: -16rem;
+    font-size: 25px;
+}
+.btn-group2 a:nth-of-type(2){
+	background-color: var(--second-bg-color);
+    border: 1px solid var(--second-bg-color);
+    margin-left: -2rem;
+    width: 1px;
+}
+.btn-group2 a:nth-of-type(3){
+	background-color: var(--second-bg-color);
+    border: 1px solid var(--second-bg-color);
+    margin-left: -2rem;
+}
+.btn-group2 a:nth-of-type(4){
+	background-color: var(--second-bg-color);
+    border: 1px solid var(--second-bg-color);
+    margin-left: -2rem;
+}
+/* Conteneur principal */
+.container {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    flex-direction: column; /* Aligne les éléments enfants en colonne */
+    max-width: 1000px; /* Limite la largeur maximale du conteneur */
+}
+
+/* Style pour le premier conteneur */
+.containerun, .containerdeux {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    flex-direction: row; /* Aligne les éléments enfants en ligne */
+    justify-content: space-between; /* Espace les éléments enfants de manière égale */
+    margin: 20px 0; /* Ajoute une marge verticale entre les sections */
+}
+
+/* Style pour les sections à gauche et à droite */
+.leftun, .rightun, .leftdeux, .rightdeux {
+    width: 45%; /* Définit la largeur des sections à 45% */
+}
+
+/* Justifie le texte à droite */
+.containerun .rightun, .containerdeux .rightdeux {
+    text-align: justify; /* Justifie le texte pour une présentation uniforme */
+}
+.containerun .rightun{
+    padding-top: 5rem;
+}
+.containerdeux .rightdeux button{
+    margin-top: 2rem;
+}
+/* Réduit la taille de l'image et ajoute une marge à droite */
+.leftdeux img {
+    width: 80%; /* Définit la largeur de l'image à 80% */
+    margin-right: 20px; /* Ajoute une marge à droite de l'image */
+}
+
+/* Style pour les boutons */
+button {
+    padding: 10px 20px; /* Ajoute du padding intérieur au bouton */
+    background-color: #FB5607; /* Définit la couleur de fond du bouton */
+    color: white; /* Définit la couleur du texte du bouton */
+    border: none; /* Supprime les bordures */
+    cursor: pointer; /* Change le curseur en pointeur survol */
+    border-radius: 10%;/* Ajoute des coins arrondis de 10% */
+
+}
+/* Style pour le bouton au survol */
+button:hover {
+    background-color: #0056b3; /* Change la couleur de fond au survol */
+}
+/* Ajout du background avec opacité pour .containerun */
+.containerun {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    flex-direction: row; /* Aligne les éléments enfants en ligne */
+    justify-content: space-between; /* Espace les éléments enfants de manière égale */
+    margin: 20px 0; /* Ajoute une marge verticale entre les sections */
+    background-color: rgba(217, 217, 217, 0.19); /* Définit la couleur de fond avec une opacité de 19% */
+    padding-bottom: 5rem;
+}
+/* ajout de la couleur des titres h5*/
+h5{
+    color: #3A86FF;
+}
+/* ajout de la couleur des titres h1*/
+h1{
+    color: black;
+}
+/* Ajout d'une flèche au bouton "Read More" */
+button::after {
+    content: '→'; /* Caractère de la flèche */
+    font-size: 1.2em; /* Augmente la taille de la flèche */
+    margin-left: 10px; /* Ajoute un espace entre le texte et la flèche */
+}
+/* Centrer le texte de la section .containertrois */
+.containertrois h1,h5{
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    flex-direction: column; /* Aligne les éléments enfants en colonne */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre le texte des éléments enfants */
+}
+.containertrois{
+    background-color: rgba(217, 217, 217, 0.19); /* Définit la couleur de fond avec une opacité de 19% */
+    padding-bottom: 5rem;
+    align-items: center;
+}
+.containertrois .container-box{
+    display: flex;
+    justify-content: space-between;
+}
+.containertrois .container-box p{
+    margin-top: -6rem;
+    margin-left: 10rem;
+}
+/* Style pour les éléments h5 et h1 */
+h5, h1 {
+     /* Supprime les marges pour une présentation uniforme */
+    text-align: left; /* Aligne le texte sur la gauche */
+    padding-top: 3rem;
+}
+.container-box{
+    margin-top: 5rem;
+}
+
+/* Style pour les boîtes */
+.box, .box2, .box3 {
+    background-color: white; /* Couleur de fond blanche */
+    border: 1px solid #ddd; /* Bordure gris clair */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Léger ombrage */
+    width: 50%; /* Définit la largeur des boîtes */
+  
+}
+
+/* Style pour les images */
+.box img, .box2 img, .box3 img {
+    max-width: 50px; /* Limite la largeur maximale des images */
+    height: 50px; /* Maintient les proportions des images */
+    margin-left: 2rem;
+    border-radius: 50%;
+}
+.containerquatre{
+    margin-top: 5rem;
+    background-color: var(--bg-color);
+}
+.containerquatre .team{
+    display: flex;
+    justify-content: space-between;
+}
+.containerquatre .team img{
+    width: 70%;
+}
+
+
+
+.footer{
+    background-color: var(--third-bg-color);
+    padding-top: 10rem;
+    color: var(--bg-color);
+}
+.footer h1{
+    margin-left: 3.5rem;
+    color: var(--bg-color);
+}
+.footer .footer1{
+    display: flex;
+    line-height: 3rem;
+    padding-bottom: 5rem;
+    justify-content: space-between;
+    margin-left: -1.5rem;
+}
+.footer .footcontainer{
+    display: flex;
+    line-height: 2rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    margin-left: -0.8rem;
+}
+.footer span{
+    color: var(--main-color);
+    margin-left: 0rem;
+}
+.footer .designed{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+.footer .footcontainer .btn-group2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: 2rem;
+}
+.footer .footcontainer .btn {
+    width: 20px; /* Taille du bouton */
+    height: 20px; /* Taille du bouton */
+    background-color: #f9f9f9; /* Couleur de fond claire */
+    border: 1px solid ; /* Bordure de la couleur principale */
+    border-radius: 50%; /* Forme circulaire */
+    display: flex; /* Pour centrer l'icône */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+/* Style pour les paragraphes (p) */
+.box p, .box2 p, .box3 p {
+    margin: 0; /* Supprime les marges */
+}
