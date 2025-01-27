@@ -256,6 +256,9 @@ h5, h1 {
     text-align: left; /* Aligne le texte sur la gauche */
     padding-top: 3rem;
 }
+.container-box{
+    margin-top: 5rem;
+}
 
 /* Style pour les boîtes */
 .box, .box2, .box3 {
@@ -263,10 +266,8 @@ h5, h1 {
     border: 1px solid #ddd; /* Bordure gris clair */
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Léger ombrage */
-    width: 30%; /* Définit la largeur des boîtes */
-    display: flex; /* Utilise Flexbox pour aligner les éléments */
-    align-items: center; /* Centre les éléments verticalement */
-    gap: 10px; /* Espace entre les éléments */
+    width: 50%; /* Définit la largeur des boîtes */
+  
 }
 
 /* Style pour les images */
@@ -275,6 +276,17 @@ h5, h1 {
     height: 50px; /* Maintient les proportions des images */
     margin-left: 2rem;
     border-radius: 50%;
+}
+.containerquatre{
+    margin-top: 5rem;
+    background-color: var(--bg-color);
+}
+.containerquatre .team{
+    display: flex;
+    justify-content: space-between;
+}
+.containerquatre .team img{
+    width: 70%;
 }
 
 
