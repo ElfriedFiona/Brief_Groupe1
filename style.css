@@ -70,40 +70,7 @@ body{
 	letter-spacing: 0.1rem;
 	cursor: pointer;
 }
-.btn7 {
-    display: inline-block;
-    padding: 0.5rem 1rem; /* Réduit la hauteur et la largeur du bouton */
-    background: var(--second-text-color);
-    border-radius: 1.5rem; /* Garde des bords arrondis mais plus proportionnés */
-    font-size: 0.9rem; /* Réduit la taille du texte */
-    color: var(--bg-color);
-    border: 1px solid transparent; /* Corrige l'erreur 'border-radius: 1px solid transparent' */
-    letter-spacing: 0.05rem; /* Réduit l'espacement des lettres */
-    cursor: pointer;
-}
 
-.btn8{
-	display: inline-block;
-	padding: 1rem ;
-	background: rgb(235, 211, 215);
-	border-radius: 3rem;
-	font-size: 1.2rem;
-	color: var(--bg-color);
-	border-radius: 2px solid transparent;
-	letter-spacing: 0.1rem;
-	cursor: pointer;
-}
-.btn9{
-	display: inline-block;
-	padding: 1rem ;
-	background: rgb(245, 245, 94);
-	border-radius: 3rem;
-	font-size: 1.2rem;
-	color: var(--bg-color);
-	border-radius: 2px solid transparent;
-	letter-spacing: 0.1rem;
-	cursor: pointer;
-}
 .btn-group1 a:nth-of-type(1){
 	background-color: var(--bg-color);
     border: 1px solid var(--second-bg-color);
@@ -223,6 +190,28 @@ body{
     padding-bottom: 3rem;
     margin-left: -1rem;
 }
+.btn7 {
+    font-size: 2.5rem;
+    background: var(--second-text-color);
+    border-radius: 30px;
+	cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn8{
+	font-size: 2.5rem;
+	background:  rgb(235, 211, 215);
+	border-radius: 30px;
+	cursor: pointer;
+    border: 2px solid transparent;
+}
+.btn9{
+	font-size: 2.5rem;
+	background: rgb(245, 245, 94);
+	border-radius: 30px;
+	cursor: pointer;
+    border: 2px solid transparent;
+}
 
 
 
@@ -275,12 +264,14 @@ body{
     font-size: 1.15rem;
     color: var(--second-bg-color);
     padding-top: 1rem;
+    margin-right: 0;
 }
 .explore .explorebloc .expright .bloc4 > div {
     text-align: left; 
     height: 70px; 
     margin-left: -10.5rem;
     font-size: 1rem;
+    margin-right: 0;
 }
 
 .properties{
@@ -459,7 +450,7 @@ body{
 .choose {
     background-color: var(--fourth-bg-color); /* Fond de la section */
     padding: 80px 0; /* Espacement interne */
-    text-align: center; /* Centrer le titre */
+    text-align: center;
 }
 
 .choose h1 {
@@ -490,11 +481,10 @@ body{
     background-color: white; /* Fond blanc */
     border: 1px solid #ddd; /* Bordure grise légère */
     border-radius: 10px; /* Coins arrondis */
-    padding: 20px; /* Espacement interne */
     display: flex; /* Positionne l'icône et le texte horizontalement */
-    align-items: center; /* Aligne l'icône et le texte verticalement */
     flex: 1; /* Les cartes prennent la même largeur */
     max-width: 250px; /* Largeur maximale de chaque carte */
+    height: 120px;
 }
 
 
@@ -502,14 +492,15 @@ body{
 .btn3, .btn4, .btn5 {
     display: flex;
     justify-content: center;
-    margin-left: -4rem;
+    margin-left: -3rem;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: #f0f0f0;
     border-radius: 50%; /* Forme circulaire */
     font-size: 2rem;
     flex-shrink: 0; /* Empêche l'icône de rétrécir */
+    margin-top: 3.5rem;
 }
 .btn4{
     background-color: rgb(238, 219, 222);
@@ -519,18 +510,28 @@ body{
 }
 
 /* STYLE DU TEXTE DANS LES CARTES */
-
-.buy h2, .see h2, .rent h2 {
+.choose-container .rent,.buy,.see{
+    margin-left: 3rem;
+    margin-right: 0;
+    margin-top: 0.5rem;
+}
+.choose-container  h4 {
     font-size: 1.5rem;
     color: var(--text-color);
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: -12rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+.choose-container  p{
+    color: var(--second-bg-color);
     margin-left: -11rem;
+    line-height: 1.5rem;
+    padding-top: 1rem;
 }
 
-.buy p, .see p, .rent p {
-    font-size: 1rem;
-    color: var(--second-bg-color);
-    margin-left: -10rem;
-}
 
 
 .faqs{
@@ -627,41 +628,42 @@ body{
 .btn1 {
     display: flex; /* Positionne le texte et l'icône en ligne */
     justify-content: space-between; /* Crée un espace entre le texte et l'icône */
-    width: 150px; /* Largeur du bouton */
-    height: 30px; /* Hauteur du bouton */
+    width: 170px; /* Largeur du bouton */
+    height: 40px; /* Hauteur du bouton */
     background-color: white; /* Fond blanc */
     border: 1px solid #ccc; /* Bordure grise légère */
     border-radius: 8px; /* Coins légèrement arrondis */
     color: var(--second-bg-color); /* Couleur du texte */
     font-size: 1rem; /* Taille du texte */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet d'ombre */ 
-    
+    margin-top: 1rem;
+    padding-top:0.5rem;
 }
 
 /* TEXTE À GAUCHE */
 .btn1 span { 
-    font-size: 0.5rem;
+    font-size: 10rem;
     line-height: 0.8rem;
     color: var(--second-bg-color);
     font-size: 1rem;
-    padding-top: 0.4rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    padding-top: 1rem;
+    margin-right: 0rem;
+    margin-left: 0.7rem;
 }
 
 /* STYLE DE L'ICÔNE */
 .btn1 i {
     background-color: var(--main-color); /* Fond orange */
     border-radius: 50%; /* Forme circulaire */
-    width: 50px; /* Largeur du cercle */
+    width: 30px; /* Largeur du cercle */
     height: 20px; /* Hauteur du cercle */
     display: flex; /* Pour centrer l'icône */
     justify-content: center; /* Centre horizontalement */
     align-items: center; /* Centre verticalement */
-    font-size: 1.2rem; /* Taille de l'icône */
+    font-size: 1.5rem; /* Taille de l'icône */
     margin-top: 0.5rem;
-    margin-left: -0.1rem;
-    padding-right: -5rem;
+    margin-left: 0rem;
+    margin-right: 0.7rem;
 }
 
 .footer .designed i{
