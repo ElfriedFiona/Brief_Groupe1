@@ -293,20 +293,20 @@ section {
 }
 .footer{
   background-color: var(--third-bg-color);
-  padding-top: 10rem;
+  padding-top: 3rem;
   color: var(--bg-color);
 }
 .footer .footer1{
   display: flex;
   line-height: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   justify-content: space-between;
   margin-left: -1.5rem;
 }
 .footer .footcontainer{
   display: flex;
   line-height: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   padding-top: 5rem;
   margin-left: -0.8rem;
 }
@@ -316,7 +316,6 @@ section {
 }
 .footer .designed{
   padding-top: 4rem;
-  padding-bottom: 4rem;
   text-align: center;
 }
 .footer .footcontainer .btn-group2{
