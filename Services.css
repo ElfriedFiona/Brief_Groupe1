@@ -1,0 +1,159 @@
+/* Conteneur principal */
+.container {
+    margin: 30px;
+    background-color:rgba(217, 217, 217, 0.19); /* Définit la couleur de fond avec une opacité de 19% */;
+    padding-bottom: 40px;
+}
+
+
+/* Conteneur secondaire */
+
+.container .box{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* Style pour le conteneur de gauche */
+
+/* Style pour le conteneur de droite */
+.container .box .rightun {
+     /* Prend deux fois plus d'espace que le conteneur de gauche */
+    display: flex; /* Utilise Flexbox pour aligner les éléments en colonne */
+    justify-content: space-between;
+    align-items: center; /* Centre les éléments verticalement */
+}
+.container .box .leftun img{
+    width: 150%;
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+.container .box .rightun .image1 img{
+    width: 50%;
+    margin-left: 280px;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+.container .box .rightun .image2 img{
+    width: 80%;
+    border-radius: 10px;
+    margin-right: 10rem;
+    margin-top: -500rem;
+}
+p{
+    margin-left: 18rem;
+    color:#999595;
+}
+
+/* Style pour les images */
+
+
+/* Style pour les paragraphes */
+
+/* Style pour les boutons */
+button {
+    padding: 10px 20px; /* Ajoute du padding intérieur au bouton */
+    margin-left: 290px;
+    background-color: #FB5607; /* Définit la couleur de fond du bouton */
+    color: white; /* Définit la couleur du texte du bouton */
+    border: none; /* Supprime les bordures */
+    cursor: pointer; /* Change le curseur en pointeur survol */
+    border-radius: 23px;/* Ajoute des coins arrondis de 10% */
+   
+
+}
+/* Ajout d'une flèche au bouton "Read More" */
+button::after {
+    content: '→'; /* Caractère de la flèche */
+    font-size: 1.2em; /* Augmente la taille de la flèche */
+    margin-left: 10px; /* Ajoute un espace entre le texte et la flèche */
+}
+
+/* ajout de la couleur des titres h5*/
+h5{
+    color: #3A86FF;
+    text-align: left;
+    padding-top: 50px;
+    margin-left: 90px;
+    margin-bottom: -0.5rem;
+}
+/* ajout de la couleur des titres h1*/
+h1{
+    color: black;
+    text-align: left;
+    margin-left: 90px;
+}
+.containerun{
+    margin: 30px;
+    padding-bottom: 40px;
+}
+.containerun .box{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+   
+}
+.containerun .box1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+}
+img{
+    width: 80%; /* Prend 80% de la largeur du conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+    margin-bottom: 10px; /* Ajoute un espace sous les images */
+    border-radius: 10px ;
+}
+h5{
+    color: #3A86FF;
+}
+h1{
+    color: black;
+    
+}
+h6{
+    color: #999595;
+}
+.containerun .box h1{
+    margin-left: -3px;
+}
+.containerun .box1 h1{
+    margin-left: -3px;
+}
+
+/* * Style pour les boîtes */ 
+.containertrois .containertroisun .box1, .box2, .box3 {
+    background-color: white; /* Couleur de fond blanche */
+    border: 1px solid #ddd; /* Bordure gris clair */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 10px; /* Espacement intérieur */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Léger ombrage */
+    width: 30%; /* Définit la largeur des boîtes */
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    gap: 10px; /* Espace entre les éléments */
+    flex-direction: column; /* Aligne les éléments enfants en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre le texte des éléments enfants */
+   
+}
+
+/* Style pour les images */
+.box1 img, .box2 img, .box3 img {
+    max-width: 50px; /* Limite la largeur maximale des images */
+    height: 50px; /* Maintient les proportions des images */
+}
+
+
+/* Style pour les titres (h2) */
+.box1 h3, .box2 h2, .box3 h2 {
+    margin-top: 0; /* Supprime la marge supérieure */
+    margin-bottom: 10px; /* Ajoute un petit espace sous le titre */
+    align-self: center; /* Centre le titre horizontalement */
+}
+/* Style pour les paragraphes (p) */
+.box1 p, .box2 p, .box3 p {
+    margin: 0; /* Supprime les marges */
+}
+
+
