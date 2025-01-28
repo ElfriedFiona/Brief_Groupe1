@@ -19,7 +19,7 @@
 }
 html{
 	font-size: 60%;
-	overflow-x: hidden;
+	overflow-x: hidden;;
 }
 .header{
 	position: fixed;
@@ -66,40 +66,7 @@ html{
 	letter-spacing: 0.1rem;
 	cursor: pointer;
 }
-.btn7 {
-    display: inline-block;
-    padding: 0.5rem 1rem; /* Réduit la hauteur et la largeur du bouton */
-    background: var(--second-text-color);
-    border-radius: 1.5rem; /* Garde des bords arrondis mais plus proportionnés */
-    font-size: 0.9rem; /* Réduit la taille du texte */
-    color: var(--bg-color);
-    border: 1px solid transparent; /* Corrige l'erreur 'border-radius: 1px solid transparent' */
-    letter-spacing: 0.05rem; /* Réduit l'espacement des lettres */
-    cursor: pointer;
-}
 
-.btn8{
-	display: inline-block;
-	padding: 1rem ;
-	background: rgb(235, 211, 215);
-	border-radius: 3rem;
-	font-size: 1.2rem;
-	color: var(--bg-color);
-	border-radius: 2px solid transparent;
-	letter-spacing: 0.1rem;
-	cursor: pointer;
-}
-.btn9{
-	display: inline-block;
-	padding: 1rem ;
-	background: rgb(245, 245, 94);
-	border-radius: 3rem;
-	font-size: 1.2rem;
-	color: var(--bg-color);
-	border-radius: 2px solid transparent;
-	letter-spacing: 0.1rem;
-	cursor: pointer;
-}
 .btn-group1 a:nth-of-type(1){
 	background-color: var(--bg-color);
     border: 1px solid var(--second-bg-color);
@@ -160,7 +127,7 @@ html{
 .container {
     display: flex; /* Utilise Flexbox pour la mise en page */
     flex-direction: column; /* Aligne les éléments enfants en colonne */
-    max-width: 1000px; /* Limite la largeur maximale du conteneur */
+    
 }
 
 /* Style pour le premier conteneur */
@@ -180,11 +147,44 @@ html{
 .containerun .rightun, .containerdeux .rightdeux {
     text-align: justify; /* Justifie le texte pour une présentation uniforme */
 }
+.containerun .leftun{
+    margin-top: 5.5rem;
+    line-height: 2rem;
+    margin-left: 10rem;
+    letter-spacing: 0.2rem;
+}
+.containerun .leftun h1 span{
+    margin-top: 5.5rem;
+    line-height: 2rem;
+    margin-left: -0.1rem;
+    color: var(--second-text-color);
+}
 .containerun .rightun{
     padding-top: 5rem;
+    line-height: 1.5rem;
+    margin-left: -60rem;
+    text-align: left;
+}
+.containerdeux{
+    margin-bottom: 4rem;
 }
 .containerdeux .rightdeux button{
+    margin-top: 5rem;
+}
+.containerdeux .rightdeux p{
     margin-top: 2rem;
+    color: var(--second-bg-color);
+}
+.containerdeux .rightdeux h1{
+    font-size: 2rem;
+}
+.containerdeux .rightdeux h1 span{
+    font-size: 1rem;
+    margin-left: -0.1rem;
+    color: var(--second-text-color);
+}
+.containerdeux .rightdeux {
+    line-height: 2rem;
 }
 /* Réduit la taille de l'image et ajoute une marge à droite */
 .leftdeux img {
@@ -194,18 +194,15 @@ html{
 
 /* Style pour les boutons */
 button {
-    padding: 10px 20px; /* Ajoute du padding intérieur au bouton */
+   padding: 0 30px;/* Ajoute du padding intérieur au bouton */
     background-color: #FB5607; /* Définit la couleur de fond du bouton */
     color: white; /* Définit la couleur du texte du bouton */
-    border: none; /* Supprime les bordures */
+    border: 5px solid transparent; /* Supprime les bordures */
     cursor: pointer; /* Change le curseur en pointeur survol */
-    border-radius: 10%;/* Ajoute des coins arrondis de 10% */
+    border-radius: 30px;/* Ajoute des coins arrondis de 10% */
 
 }
-/* Style pour le bouton au survol */
-button:hover {
-    background-color: #0056b3; /* Change la couleur de fond au survol */
-}
+
 /* Ajout du background avec opacité pour .containerun */
 .containerun {
     display: flex; /* Utilise Flexbox pour la mise en page */
@@ -235,6 +232,8 @@ button::after {
     background-color: var(--fourth-bg-color); /* Fond de la section */
     padding: 40px 0; /* Espacement interne */
     text-align: center;
+    width: 1110px;
+    margin-left: -1px;
 }
 
 .containertrois h1 {
@@ -255,16 +254,14 @@ button::after {
     display: flex; /* Alignement horizontal des cartes */
     justify-content: center; /* Centrer les cartes dans le conteneur */
     flex-wrap: wrap; /* Permet aux cartes de revenir à la ligne sur petits écrans */
-    max-width: 1000px; /* Limite la largeur totale du conteneur */
     margin: 0 auto; /* Centrer le conteneur dans la page */
-    margin-left: 5rem;
-    margin-right: 5rem;
-    
+   max-width: 1100px;
+   
 }
 
 /* STYLE DES CARTES */
 .box, .box2, .box3 {
-    background-color: white; /* Fond blanc */
+    background-color: var(--bg-color); /* Fond blanc */
     border: 1px solid #ddd; /* Bordure grise légère */
     border-radius: 10px; /* Coins arrondis */
     display: flex; /* Positionne l'icône et le texte horizontalement */
@@ -285,7 +282,7 @@ button::after {
     color: var(--text-color);
     margin-top: 1rem;
     text-align: center;
-    margin-left: -10rem;
+    margin-left: -8.9rem;
     margin-top: 1rem;
     font-size: 1.5rem;
 }
@@ -293,7 +290,12 @@ button::after {
     color: var(--second-bg-color);
     margin-left: -9rem;
     line-height: 1.5rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
+    text-align: left;
+}
+ 
+.box2, .box3{
+    margin-left: -2.5rem;
 }
 
 /* Style pour les images */
@@ -312,63 +314,67 @@ button::after {
 }
 
 .containerquatre {
-    text-align: center; /* Centre le texte dans la section */
-    padding: 50px 0;
+    text-align: center;
+    padding: 80px 0;
 }
 
 .containerquatre h1 {
     font-size: 2.5rem;
-    margin-bottom: 40px; /* Espace sous le titre */
+    margin-bottom: 40px;
 }
 
 .containerquatre h1 span {
-    color: var(--main-color); /* Couleur principale pour le texte mis en avant */
+    color: var(--second-text-color);
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .team {
-    display: flex; /* Aligne les éléments sur une ligne */
-    justify-content: space-around; /* Espacement entre les colonnes */
-    flex-wrap: wrap; /* Permet aux éléments de revenir à la ligne si nécessaire */
-    gap: 20px; /* Espacement entre les colonnes */
-}
-
-.team .item {
-    position: relative; /* Permet de positionner les icônes par rapport à l'image */
-    flex: 1; /* Les colonnes prennent une largeur égale */
-    max-width: 200px; /* Largeur maximale de chaque colonne */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Les colonnes passent à la ligne sur petits écrans */
+    margin: 0 auto; /* Centre le conteneur */
     text-align: center;
 }
 
-.team .item img {
-    width: 100%; /* L'image occupe toute la largeur de son conteneur */
-    border-radius: 10px; /* Coins arrondis pour l'image */
-    display: block; /* Supprime l'espace blanc sous les images */
+ .item, .item2, .item3, .item4 {
+    width: 20%; /* Chaque colonne occupe 22% de la largeur */
+    background-color: var(--fourth-bg-color);
+    margin: 0.5%; /* Espacement entre les colonnes */
+    position: relative; /* Nécessaire pour positionner les icônes */
 }
 
-.team .item i {
-    position: absolute; /* Positionne l'icône par rapport à l'image */
-    bottom: 10px; /* Décalage vertical par rapport au bas de l'image */
-    left: 50%; /* Positionne au centre horizontalement */
-    transform: translateX(-50%); /* Centrage précis */
-    font-size: 1.5rem; /* Taille des icônes */
-    color: white; /* Couleur des icônes */
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent derrière les icônes */
-    padding: 10px; /* Espacement interne autour des icônes */
-    border-radius: 50%; /* Forme circulaire pour les icônes */
+.team .item img, .item2 img, .item3 img, .item4 img {
+    width: 100px;
+    height: auto; /* Préserve les proportions de l'image */
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.team .item h2 {
-    font-size: 1.25rem; /* Taille du nom */
-    margin-top: 10px; /* Espacement au-dessus du nom */
-    color: #333; /* Couleur du texte */
+.team .item i, .item2 i, .item3 i, .item4 i {
+    position: absolute;
+    top: 70%; /* Centre verticalement */
+    left: 40%; /* Centre horizontalement */
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 10px;
+    
 }
 
-.team .item h6 {
-    font-size: 1rem; /* Taille du poste */
-    color: #777; /* Couleur plus claire pour différencier le poste */
-    margin-top: 5px; /* Espacement entre le nom et le poste */
+
+.team h2 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: var(--text-color);
 }
+
+.team h6 {
+    font-size: 1rem;
+    color: var(--second-bg-color);
+    margin-top: 5px;
+}
+
 
 
 
