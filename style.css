@@ -496,16 +496,7 @@ body{
     flex: 1; /* Les cartes prennent la même largeur */
     max-width: 250px; /* Largeur maximale de chaque carte */
 }
-.choose1, .choose2, .choose3 {
-    background-color: white; /* Fond blanc */
-    border: 1px solid #ddd; /* Bordure grise légère */
-    border-radius: 10px; /* Coins arrondis */
-    padding: 20px; /* Espacement interne */
-    display: flex; /* Positionne l'icône et le texte horizontalement */
-    align-items: center; /* Aligne l'icône et le texte verticalement */
-    flex: 1; /* Les cartes prennent la même largeur */
-    max-width: 250px; /* Largeur maximale de chaque carte */
-}
+
 
 /* STYLE DES ICONES */
 .btn3, .btn4, .btn5 {
