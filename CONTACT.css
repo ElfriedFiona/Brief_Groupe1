@@ -1,32 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
- 
-* {
-  padding: 0;
-  margin: 0;
+*{
+  margin: 0 40px;
+  padding-top: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "poppins", sans-serif;
+  
 }
- 
-body {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+:root{
+  --bg-color:#FFF;
+  --second-bg-color: #999595;
+  --third-bg-color:  #0b2238;
+  --fourth-bg-color: #F1EEEE;
+  --text-color: black;
+  --second-text-color: #3a86ff;
+  --third-text-color: #7bd88a;
+  --main-color: #FB5607;
 }
- 
-body::after {
-  content: "";
-  position: absolute;
+html{
+font-size: 60%;
+overflow-x: hidden;
+}
+body{
+background: var(--bg-color);
+color: var(--text-color);
+}
+.header{
+position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(226, 217, 217, 0.8);
+display: flex;
+justify-content: space-between;
+  backdrop-filter: blur(40px);
+align-items: center;
+z-index: 100;
+width: 100%;
+height: 5vw;
+  margin-top: 10px;
+}
+
+.logo img{
+  width: 60px;
+cursor: pointer;
+}
+.logo2{
+  margin-left: -10rem;
+  font-size: 3.5rem;
+  margin-top: 1rem;
+  color: var(--text-color);
+  margin-right: 0;
+}
+.navbar a{
+  font-size: 1.5rem;
+  color: var(--second-bg-color);
+  margin-left: 2rem;
+  border-bottom: 10px solid transparent;
+}
+.navbar .active{
+      color: var(--main-color);
+}
+.btn{
+display: inline-block;
+padding: 1rem ;
+background: var(--main-color);
+border-radius: 3rem;
+font-size: 1.2rem;
+color: var(--bg-color);
+border-radius: 2px solid transparent;
+letter-spacing: 0.1rem;
+cursor: pointer;
+}
+
+.btn-group1 a:nth-of-type(1){
+background-color: var(--bg-color);
+  border: 1px solid var(--second-bg-color);
+color: var(--second-bg-color);
+box-shadow: 0 0 25px transparent;
+  margin-right: 20rem;
+  margin-left: -9rem;
+}
+.btn-group1 a:nth-of-type(2){
+box-shadow: 0 0 25px transparent;
+  margin-right: 12rem;
+  margin-left: -9rem;
+  font-size: 2rem;
+}
+.btn-group a:nth-of-type(2){
+background-color: var(--bg-color);
+  border: 1px solid var(--third-bg-color);
+color: var(--text-color);
+box-shadow: 0 0 25px transparent;
+}
+.btn-group a:nth-of-type(2){
+background-color: var(--bg-color);
+  border: 1px solid var(--third-bg-color);
+color: var(--text-color);
+box-shadow: 0 0 25px transparent;
+  margin-left: -2rem;
+}
+.btn-group a:nth-of-type(1){
+background-color: var(--main-color);
+color: var(--bg-color);
+  text-align: center;
+box-shadow: 0 0 25px transparent;
+  margin-left: -0rem;
+  margin-top: 3rem;
+}
+
+.btn-group1 .moon{
+  margin-left: -16rem;
+  font-size: 25px;
+}
+.contacthead{
+  background-color: var(--fourth-bg-color);
+  margin-top: 4rem;
+  
 }
  
 section {
@@ -42,6 +131,7 @@ section {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  margin-right: 2rem;
 }
  
 .section-header {
@@ -67,7 +157,6 @@ section {
  
 .row  {
   display: flex;
-  flwx-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -84,14 +173,16 @@ section {
 .contact-info-icon {
   height: 70px;
   width: 70px;
-  background-color: #fff;
+  background-color: var(--fourth-bg-color);
   text-align: center;
   border-radius: 50%;
 }
  
 .contact-info-icon i {
+  display: flex;
   font-size: 30px;
   line-height: 70px;
+  color: var(--second-text-color);
 }
  
 .contact-info-content {
@@ -109,12 +200,8 @@ section {
   font-size: 1em;
 }
  
-.contact-form {
-  background-color: #fff;
-  padding: 40px;
-  width: 45%;
-  padding-bottom: 20px;
-  padding-top: 20px;
+.contact-form{
+  margin-left: -20rem;
 }
  
 .contact-form h2 {
@@ -125,10 +212,11 @@ section {
   text-align: center;
 }
  
-.contact-form .input-box {
+ .input-box {
   position: relative;
   width: 100%;
   margin-top: 10px;
+  background-color: var(--bg-color);
 }
  
 .contact-form .input-box input,
@@ -146,7 +234,7 @@ section {
 .contact-form .input-box span {
   position: absolute;
   left: 0;
-  padding: 5px 0;
+  padding: 5px 30px;
   font-size: 16px;
   margin: 10px 0;
   pointer-events: none;
@@ -202,5 +290,111 @@ section {
   .contact-form {
     width: 100%;
   }
-  
+}
+.footer{
+  background-color: var(--third-bg-color);
+  padding-top: 10rem;
+  color: var(--bg-color);
+}
+.footer .footer1{
+  display: flex;
+  line-height: 3rem;
+  padding-bottom: 5rem;
+  justify-content: space-between;
+  margin-left: -1.5rem;
+}
+.footer .footcontainer{
+  display: flex;
+  line-height: 2rem;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  margin-left: -0.8rem;
+}
+.footer span{
+  color: var(--main-color);
+  margin-left: 0rem;
+}
+.footer .designed{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.footer .footcontainer .btn-group2{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-top: 2rem;
+}
+.footer .footcontainer .btn {
+  width: 20px; /* Taille du bouton */
+  height: 20px; /* Taille du bouton */
+  background-color: #f9f9f9; /* Couleur de fond claire */
+  border: 1px solid ; /* Bordure de la couleur principale */
+  border-radius: 50%; /* Forme circulaire */
+  display: flex; /* Pour centrer l'icône */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+}
+
+/* STYLE DU BOUTON */
+.btn1 {
+  display: flex; /* Positionne le texte et l'icône en ligne */
+  justify-content: space-between; /* Crée un espace entre le texte et l'icône */
+  width: 170px; /* Largeur du bouton */
+  height: 40px; /* Hauteur du bouton */
+  background-color: white; /* Fond blanc */
+  border: 1px solid #ccc; /* Bordure grise légère */
+  border-radius: 8px; /* Coins légèrement arrondis */
+  color: var(--second-bg-color); /* Couleur du texte */
+  font-size: 1rem; /* Taille du texte */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet d'ombre */ 
+  margin-top: 1rem;
+  padding-top:0.5rem;
+}
+.btn-group2 a:nth-of-type(2){
+	background-color: var(--second-bg-color);
+    border: 1px solid var(--second-bg-color);
+    margin-left: -2rem;
+    width: 1px;
+}
+.btn-group2 a:nth-of-type(3){
+	background-color: var(--second-bg-color);
+    border: 1px solid var(--second-bg-color);
+    margin-left: -2rem;
+}
+.btn-group2 a:nth-of-type(4){
+	background-color: var(--second-bg-color);
+    border: 1px solid var(--second-bg-color);
+    margin-left: -2rem;
+}
+
+/* TEXTE À GAUCHE */
+.btn1 span { 
+  font-size: 10rem;
+  line-height: 0.8rem;
+  color: var(--second-bg-color);
+  font-size: 1rem;
+  padding-top: 1rem;
+  margin-right: 0rem;
+  margin-left: 0.7rem;
+}
+
+/* STYLE DE L'ICÔNE */
+.btn1 i {
+  background-color: var(--main-color); /* Fond orange */
+  border-radius: 50%; /* Forme circulaire */
+  width: 30px; /* Largeur du cercle */
+  height: 20px; /* Hauteur du cercle */
+  display: flex; /* Pour centrer l'icône */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  font-size: 1.5rem; /* Taille de l'icône */
+  margin-top: 0.5rem;
+  margin-left: 0rem;
+  margin-right: 0.7rem;
+}
+
+.footer .designed i{
+  margin-right: -3.5rem;
+}
   
